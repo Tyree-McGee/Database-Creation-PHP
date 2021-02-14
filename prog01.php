@@ -58,24 +58,24 @@ $r2 = $db->query($sql2);
 $sql3 = "SELECT * FROM rappers";
 $r3 = $db->query($sql3);
 
-echo "<table border='1'>";
-echo "<tr><td>Name</td><td>Fun Fact</td><td>";
+echo "<table style = \"padding:10px\">";
+echo "<tr><td><b>Name</b></td><td><b>Fun Fact</b></td><td>";
 while($row = $r1->fetch_assoc()){
-	echo "<tr><td>{$row['name']}</td><td>{$row['fun_fact']}</td></tr>";
+	echo "<tr><td>{$row['name']}</td><td>{$row['fun_fact']}</td></tr><br>";
 }
 echo "</table>\n\n";
 
-echo "<table border='1'>";
-echo "<tr><td>Name</td><td>Famous Movie</td><td>";
+echo "<table style = \"padding:10px\">";
+echo "<tr><td><b>Name</b></td><td><b>Famous Movie</b></td><td>";
 while($row = $r2->fetch_assoc()){
-	echo "<tr><td>{$row['name']}</td><td>{$row['famous_movie']}</td></tr>";
+	echo "<tr><td>{$row['name']}</td><td>{$row['famous_movie']}</td></tr><br>";
 }
 echo "</table>\n\n";
 
-echo "<table border='1'>";
-echo "<tr><td>Name</td><td>Famous Song</td><td>";
+echo "<table style = \"padding:10px\">";
+echo "<tr><td><b>Name</b></td><td><b>Famous Song</b></td><td>";
 while($row = $r3->fetch_assoc()){
-	echo "<tr><td>{$row['name']}</td><td>{$row['famous_song']}</td></tr>";
+	echo "<tr><td>{$row['name']}</td><td>{$row['famous_song']}</td></tr><br>";
 }
 echo "</table>\n\n";
 
